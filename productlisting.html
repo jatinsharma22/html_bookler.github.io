@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SmartCompare</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--======header====-->
+  <header>
+    <div class="container">
+      <div class="header_wrap">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg" alt="" /></a>
+        </div>
+        <div class="header_search">
+          <div class="input-group position-relative">
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Location
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <input type="text" class="form-control" placeholder="What are you looking for...">
+
+            <Button class="btn border-0 theme-bg" id="button-addon2">
+              <img src="images/search-w.svg" alt="" />
+            </Button>
+
+
+          </div>
+        </div>
+
+        <div class="header_icon d-flex align-items-center">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+          </a>
+          <a href="#">
+            <i class="fas fa-heart"></i>
+            <span>Favorite</span>
+          </a>
+          <a href="#">
+            <sup>1</sup>
+            <i class="fas fa-bell"></i>
+            <span>Notification</span>
+          </a>
+          <a href="#">
+            <i class="fas fa-comments"></i>
+            <span>Chat</span>
+          </a>
+          <a class="d-sm-none" onClick={handleShow}>
+            <i class="fas fa-list-ul"></i>
+            <span>All Categories</span>
+          </a>
+        </div>
+
+        <div class="header_user">
+          <div class="header_profile">
+            <div class="before_login">
+              <img src="images/account.jpg" class="me-2" alt="" />
+              <span class="">
+                <a href="#">Login</a>
+                <a href="#">/Signup</a>
+              </span>
+            </div>
+            <div class="after_login d-none">
+              <img src="images/account.jpg" class="me-2" alt="" />
+              <span class="">Hello, John</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--=======end-header======-->
+
+  <div class="page-content-wrapper pt-md-4">
+    <div class="container">
+      <button type="button" class="btn d-lg-none d-xs-inline-block mb-2 filter-mobile-toggle" data-bs-toggle="offcanvas"
+        href="#filter">
+        <img src="images/cat_icon.svg" alt="" />
+        Filter
+      </button>
+      <div class="listing-row">
+        <div class="filter-sidebar d-none d-lg-inline-block">
+          <div class="sidebar-head d-flex align-items-center justify-content-between">
+            <h1>Filters</h1>
+            <a href="#" class="text-orange">Reset</a>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">Categories </button>
+              </h2>
+
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="">
+                    <label class="form-check-label" for="flexCheckDefault">Clothing</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Electronics</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Furniture</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Grocery</label>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsetwo">Sub-Categories </button>
+              </h2>
+
+              <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="">
+                    <label class="form-check-label" for="flexCheckDefault">T-Shirts</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Jeans</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Trousers</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Kurta</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsethree">Price </button>
+              </h2>
+
+              <div id="collapsethree" class="accordion-collapse collapse show" aria-labelledby="headingthree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="">
+                    <label class="form-check-label" for="flexCheckDefault">Any</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Under $25</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">$25 to $50</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">$100 to $200</label>
+                  </div>
+
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="flexCheckChecked">$200 and above</label>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefour">Categories </button>
+              </h2>
+
+              <div id="collapsefour" class="accordion-collapse collapse show" aria-labelledby="headingfour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="">
+                    <label class="form-check-label" for="flexCheckDefault">Any</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Armani</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Levis</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Wrangler</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">Gucci</label>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsefive">Rating </button>
+              </h2>
+
+              <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingfive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span> </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span><img src="images/graystar.svg"></span>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="right-main">
+          <div class="filter-head">
+            <h3>75042 Results for "T-shirt"</h3>
+            <div class="filter-head-right">
+              <label>Sort by:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Newly Added</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-listing shop_cat">
+            <ul class="item-listing">
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product7.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product8.jpg" />
+                    <div class="wishlist heart-tick"><i class="fas fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product9.jpg" />
+                    <div class="wishlist heart-tick"><i class="fas fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product10.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product11.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product12.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product13.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product14.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product15.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product16.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+
+            <div class="ad text-center mt-2 mb-2 mt-md-3 mb-md-3">
+              <img src="images/ad2.jpg" class="w-100" alt="">
+            </div>
+
+            <ul class="item-listing">
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product7.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product8.jpg" />
+                    <div class="wishlist heart-tick"><i class="fas fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product9.jpg" />
+                    <div class="wishlist heart-tick"><i class="fas fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product10.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product11.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product12.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product13.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product14.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product15.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="card">
+                  <div class="discount">25% Off</div>
+                  <a href="#" class="item-pic">
+                    <img src="images/product16.jpg" />
+                    <div class="wishlist"><i class="far fa-heart"></i></div>
+                  </a>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="#">Samsung Galaxy Mobile</a>
+                    </div>
+                    <span class="ctg-name text-orange">Clothing</span>
+                    <div class="price">$20,000</div>
+                    <span>10.0 Pieces (Min. Order)</span>
+                    <div class="item-footer">
+
+                      <div class="quantity-number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1" />
+                        <span class="plus">+</span>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="filter-bottom pagger">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+                      class="fas fa-chevron-left"></i>Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next<i class="fas fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--=====footer======-->
+  <footer>
+    <div class="container">
+      <div class="newsletter">
+        <h2>WE ARE AWESOME & COOL PLUS OUR SERVICES ROCK</h2>
+        <p>
+          Subscribe to our newsletter & stay tune for more updates and our
+          offers
+        </p>
+
+        <Form>
+          <div class="d-flex align-items-center" controlId="formBasicEmail">
+            <input type="email" class="form-control" placeholder="Enter email">
+            <button class="btn theme-btn ms-2 text-white" type="submit"> Subscribe </button>
+          </div>
+        </Form>
+      </div>
+
+      <div class="footer_menu">
+        <div>
+          <h5>Customer Services</h5>
+          <ul>
+            <li>
+              <a href="#">Help Center</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Report Abuse</a>
+            </li>
+            <li>
+              <a href="#">Submit a Dispute</a>
+            </li>
+            <li>
+              <a href="#">Policies & Rules</a>
+            </li>
+            <li>
+              <a href="#">Get Paid for Your Feedback</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>About Us</h5>
+          <ul>
+            <li>
+              <a href="#">About Company.com</a>
+            </li>
+            <li>
+              <a href="#">About Company Group</a>
+            </li>
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Trade Services</h5>
+          <ul>
+            <li>
+              <a href="#">Trade Assurance</a>
+            </li>
+            <li>
+              <a href="#">Business Identity</a>
+            </li>
+            <li>
+              <a href="#">Logistics Service</a>
+            </li>
+            <li>
+              <a href="#">Production Monitoring</a>
+            </li>
+            <li>
+              <a href="#">Letter of Credit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Source on </h5>
+          <ul>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li>
+              <a href="#">All Categories</a>
+            </li>
+            <li>
+              <a href="#">Request for Quotation</a>
+            </li>
+            <li>
+              <a href="#">Ready to Ship</a>
+            </li>
+            <li>
+              <a href="#">Buyer Partners</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Sell on Alibaba.com</h5>
+          <ul>
+            <li>
+              <a href="#">Supplier Memberships</a>
+            </li>
+            <li>
+              <a href="#">Learning Center</a>
+            </li>
+            <li>
+              <a href="#">Partner Program</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_social position-relative d-flex align-items-center justify-content-center">
+        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p class="m-0">
+      Copyright © 1999-2021 Company.com. All rights reserved.
+    </p>
+  </div>
+
+
+  <!--filter-->
+
+  <div class="offcanvas offcanvas-end all_category filter-sidebar" tabindex="-1" id="filter"
+    aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">
+        <div class="sidebar-head d-flex align-items-center justify-content-between">
+          <h1>Filters</h1>
+          <a href="#" class="text-orange">Reset</a>
+        </div>
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne">Categories </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Clothing</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Electronics</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Furniture</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Grocery</label>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwo">Sub-Categories </button>
+          </h2>
+
+          <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">T-Shirts</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Jeans</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Trousers</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Kurta</label>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsethree">Price </button>
+          </h2>
+
+          <div id="collapsethree" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Any</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Under $25</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">$25 to $50</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">$100 to $200</label>
+              </div>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="flexCheckChecked">$200 and above</label>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsefour">Categories </button>
+          </h2>
+
+          <div id="collapsefour" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Any</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Armani</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Levis</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Wrangler</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">Gucci</label>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsefive">Rating </button>
+          </h2>
+
+          <div id="collapsefive" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span> </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span><img src="images/graystar.svg"></span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                  <span class="active"><img src="images/star-bg.svg"></span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--=========below-script-link=========-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

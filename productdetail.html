@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SmartCompare</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--======header====-->
+  <header>
+    <div class="container">
+      <div class="header_wrap">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg" alt="" /></a>
+        </div>
+        <div class="header_search">
+          <div class="input-group position-relative">
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Location
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <input type="text" class="form-control" placeholder="What are you looking for...">
+
+            <Button class="btn border-0 theme-bg" id="button-addon2">
+              <img src="images/search-w.svg" alt="" />
+            </Button>
+
+
+          </div>
+        </div>
+
+        <div class="header_icon d-flex align-items-center dropdown">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+          </a>
+        
+          <a href="javascript:void(0)" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><sup>1</sup><i class="fas fa-bell"></i> <span>Notification</span></a>
+            
+          <ul class="dropdown-menu notification-list" aria-labelledby="dropdownMenuButton1">
+            <li class="notification-head">20 Notifications<a class="dropdown-item" href="#">View All</a></li>
+            <li> <div class="coupon-list border-0 p-0">
+              <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="d-flex align-items-center">
+                  <figure class="m-0">
+                    <img src="./images/rating-profile.jpg" alt="">
+                  </figure>
+                  <div class="coupon-desc">
+                    <div class="d-flex align-items-center">
+                      <h5 class="m-0">Abraham Bret </h5>
+       
+                      <span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+                    </div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer
+                      adipiscing elit.</p>
+                  </div>
+                </div>
+              </div> 
+               </div></li>
+            
+               <li> <div class="coupon-list border-0 p-0">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                  <div class="d-flex align-items-center">
+                    <figure class="m-0">
+                      <img src="./images/rating-profile.jpg" alt="">
+                    </figure>
+                    <div class="coupon-desc">
+                      <div class="d-flex align-items-center">
+                        <h5 class="m-0">Abraham Bret </h5>
+        
+                        <span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+                      </div>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.</p>
+                    </div>
+                  </div>
+                </div> 
+                 </div></li>
+
+                 <li> <div class="coupon-list border-0 p-0">
+                  <div class="d-flex align-items-center justify-content-between w-100">
+                    <div class="d-flex align-items-center">
+                      <figure class="m-0">
+                        <img src="./images/rating-profile.jpg" alt="">
+                      </figure>
+                      <div class="coupon-desc">
+                        <div class="d-flex align-items-center">
+                          <h5 class="m-0">Abraham Bret </h5>
+         
+                          <span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+                        </div>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer
+                          adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div> 
+                   </div></li>
+
+
+                   <li> <div class="coupon-list border-0 p-0">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                      <div class="d-flex align-items-center">
+                        <figure class="m-0">
+                          <img src="./images/rating-profile.jpg" alt="">
+                        </figure>
+                        <div class="coupon-desc">
+                          <div class="d-flex align-items-center">
+                            <h5 class="m-0">Abraham Bret </h5>
+              
+                            <span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+                          </div>
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit.</p>
+                        </div>
+                      </div>
+                    </div> 
+                     </div></li>
+
+
+                     <li> <div class="coupon-list border-0 p-0">
+                      <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex align-items-center">
+                          <figure class="m-0">
+                            <img src="./images/rating-profile.jpg" alt="">
+                          </figure>
+                          <div class="coupon-desc">
+                            <div class="d-flex align-items-center">
+                              <h5 class="m-0">Abraham Bret </h5>
+               
+                              <span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+                            </div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer
+                              adipiscing elit.</p>
+                          </div>
+                        </div>
+                      </div> 
+                       </div></li>
+            </ul>
+ 
+
+
+
+          <a href="#">
+            <i class="fas fa-comments"></i>
+            <span>Chat</span>
+          </a>
+          <a class="d-sm-none" onClick={handleShow}>
+            <i class="fas fa-list-ul"></i>
+            <span>All Categories</span>
+          </a>
+        </div>
+
+        <div class="header_user">
+          <div class="header_profile">
+            <div class="before_login">
+              <img src="images/account.jpg" class="me-2" alt="" />
+              <span class="">
+                <a href="#">Login</a>
+                <a href="#">/Signup</a>
+              </span>
+            </div>
+            <div class="after_login d-none">
+              <img src="images/account.jpg" class="me-2" alt="" />
+              <span class="">Hello, John</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=======end-header======-->
+  <div class="page-content-wrapper pt-3 pt-md-4">
+    <div class="container">
+      <div class="detail-page-wrapper">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="product-pic-wrapper">
+              <div class="owl-carousel owl-theme" id="product-slider">
+                <div class="item">
+                  <img src="images/productdetail1.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+
+                <div class="item">
+                  <img src="images/productdetail2.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+
+                <div class="item">
+                  <img src="images/productdetail3.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+                <div class="item">
+                  <img src="images/productdetail4.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+                <div class="item">
+                  <img src="images/productdetail1.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+
+                <div class="item">
+                  <img src="images/productdetail2.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+
+                <div class="item">
+                  <img src="images/productdetail3.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+                <div class="item">
+                  <img src="images/productdetail4.jpg" alt="zoom" class="alignleft size-medium wp-image-7000" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <div class="product-detail">
+              <div class="detail-block">
+                <h1>Cool Men's T-shirts Europe Tee-Shirts Top Quality Clothes</h1>
+                <span class="ctg-name text-orange">Clothing</span>
+                <div class="product-rep">
+                  <div class="reting-left">
+                    <span class="instock text-green">Instock</span>
+                    <div class="product-reting">
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="active"><img src="images/star-bg.svg"></span>
+                      <span class="reting-count">4 Rating & 250 Revies</span>
+                    </div>
+                  </div>
+                  <button class="share-link"><img src="images/share.svg">Share</button>
+                </div>
+              </div>
+
+
+              <div class="detail-block">
+                <div class="row price-detail align-items-center">
+                  <div class="col-sm-6">
+                    <div class="detail-price">$12.99<small class="offprice">$15.58</small><span class="offclc"> 25%
+                        Off</span></div>
+                    <p>10.0 Pieces (Min. Order)</p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="brand-name">
+                      <h2><small>Seller/Brand Name</small>Verritas Fashion</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="detail-block">
+                <div class="d-flex detail-final-process">
+                  <div class="quantity-number">
+                    <span class="minus">-</span>
+                    <input type="text" value="1">
+                    <span class="plus">+</span>
+                  </div>
+
+                  <button class="btn theme-btn text-white" type="submit">Add to Cart</button>
+                  <button class="btn btn-outline-primary btn-orange" type="submit"> Buy Now </button>
+                </div>
+              </div>
+
+
+              <div class="detai-block offer-point">
+                <h3>Offers and Discounts</h3>
+                <ul>
+                  <li>- Extra $10 off via Emirates NDB Credit card.</dt>
+                  <li>- $8 Cashback via Bank of Sharjah Payment.</dd>
+                  <li>- EMI Offer available on Sharjah Islamic bank.</dt>
+                  <li>- Lorem ipsum dolor sit amet.</dd>
+                  <li>- Morbi volutpat leo in ligula.</dd>
+                  <li>- Maecenas eu elit sed nulla dignissim interdum.</dd>
+                    </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="overview-section">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#specification"
+                type="button" role="tab" aria-controls="Specification" aria-selected="false">Specification</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#rating" type="button"
+                role="tab" aria-controls="rating" aria-selected="false">Ratings and Reviews</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dt>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dt>
+                    <li>- Ut dictum nonummy diam ed a leo Cras ullamcorper nibh. Sed laoreet. </dd>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dd>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dd>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dd>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dd>
+                      </dl>
+                </div>
+
+                <div class="col-md-6">
+                  <ul>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dt>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dt>
+                    <li>- Ut dictum nonummy diam ed a leo Cras ullamcorper nibh. Sed laoreet. </dd>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dd>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dd>
+                    <li>- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. </dd>
+                    <li>- Morbi volutpat leo in ligula. </dd>
+                    <li>- Maecenas eu elit sed nulla dignissim interdum. </dd>
+                      </dl>
+                </div>
+
+              </div>
+            </div>
+
+
+    <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+      <div class="specification-list">
+				<ul>
+					<li class="row">
+						<p class="col-md-6"><span>Care Instructions:</span></span><span>Machine Wash</span></p>
+						<p class="col-md-6"><span>Model Number:</span><span>GS8749</span></p>					
+					</li>
+					
+					 <li class="row">
+						<p class="col-md-6"><span>Colour Name:</span><span>Black</span></p>
+						<p class="col-md-6"><span>Model Wears:</span><span>M</span></p>					
+					</li>
+					
+					 <li class="row">
+						<p class="col-md-6"><span>Department:</span><span>Unisex</span></p>
+						<p class="col-md-6"><span>Neckline:</span><span>Crew Neck</span></p>					
+					</li>
+					
+					
+					<li class="row">
+						<p class="col-md-6"><span>Fit:</span><span>Relaxed</span></p>
+						<p class="col-md-6"><span>Season Code:</span><span>AW</span></p>					
+					</li>
+					
+					
+					<li class="row">
+						<p class="col-md-6"><span>Material:</span><span>Cotton</span></p>
+						<p class="col-md-6"><span>Occasion:</span><span>Sports Lifestyle</span></p>					
+					</li>
+										
+					<li class="row">
+						<p class="col-md-6"><span>Material Composition:</span><span>100% Cotton</span></p>
+						<p class="col-md-6"><span>Sleeve Type:</span><span>Short Sleeve</span></p>					
+					</li> 
+				</ul>
+              </div>
+            </div> 
+
+            <div class="tab-pane fade" id="rating" role="tabpanel" aria-labelledby="rating-tab">
+				<div class="rating-review">
+					<h5>Ratings and Reviews</h5>
+
+		 <div class="row">
+			 <div class="col-md-5">		
+				 <div class="row">
+					 <div class="side-left">
+						<span class="heading"><b>4.0</b><span class="fa fa-star checked"></span></span>
+						<p>10 Rating & 250 Reviews</p>
+					 </div>
+
+					<div class="review-right">
+					<div class="row">
+					  <div class="side">
+						<div>5 <span class="fa fa-star checked"></span></div>
+					  </div>
+					  <div class="middle">
+						<div class="bar-container">
+						  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+						</div>
+					  </div>
+					  <div class="side right">
+						<div>150</div>
+					  </div>
+					  <div class="side">
+						<div>4 <span class="fa fa-star checked"></span></div>
+					  </div>
+					  <div class="middle">
+						<div class="bar-container">
+						  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div></div>
+						</div>
+					  </div>
+					  <div class="side right">
+						<div>63</div>
+					  </div>
+					  <div class="side">
+						<div>3 <span class="fa fa-star checked"></span></div>
+					  </div>
+					  <div class="middle">
+						<div class="bar-container">
+						 <div class="progress"><div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div></div>
+						</div>
+					  </div>
+					  <div class="side right">
+						<div>15</div>
+					  </div>
+					  <div class="side">
+						<div>2 <span class="fa fa-star checked"></span></div>
+					  </div>
+					  <div class="middle">
+						<div class="bar-container">
+						  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div></div>
+						</div>
+					  </div>
+					  <div class="side right">
+						<div>6</div>
+					  </div>
+					  <div class="side">
+						<div>1<span class="fa fa-star checked"></span></div>
+					  </div>
+					  <div class="middle">
+						<div class="bar-container">
+						  <div class="progress"><div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div></div>
+						</div>
+					  </div>
+					  <div class="side right">
+						<div>20</div>
+					  </div>
+					</div>
+			 	 </div>
+			   </div> 
+			  </div> 
+			
+			<div class="col-md-7">
+				<div class="review-user insize p-0 border-0">
+					<div class="coupon-list border-0 p-0">
+						<div class="d-flex align-items-center justify-content-between w-100">
+							<div class="d-flex align-items-center">
+								<figure class="m-0">
+									<img src="./images/rating-profile.jpg" alt="">
+								</figure>
+								<div class="coupon-desc">
+									<div class="d-flex align-items-center">
+										<h5 class="m-0">Abraham Bret </h5>
+										<div class="star ms-2">
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+									</div>
+									<p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. </p>
+								</div>
+							</div>
+						</div>
+					   <hr/>
+                    </div>
+					
+				 <div class="coupon-list border-0 p-0">
+						<div class="d-flex align-items-center justify-content-between w-100">
+							<div class="d-flex align-items-center">
+								<figure class="m-0">
+									<img src="./images/rating-profile.jpg" alt="">
+								</figure>
+								<div class="coupon-desc">
+									<div class="d-flex align-items-center">
+										<h5 class="m-0">Abraham Bret </h5>
+										<div class="star ms-2">
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+									</div>
+									<p class="mb-0"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. </p>
+								</div>
+							</div>
+						</div>
+					   <hr/>
+                    </div>
+					
+					
+				 <div class="coupon-list border-0 p-0">
+						<div class="d-flex align-items-center justify-content-between w-100">
+							<div class="d-flex align-items-center">
+								<figure class="m-0">
+									<img src="./images/rating-profile.jpg" alt="">
+								</figure>
+								<div class="coupon-desc">
+									<div class="d-flex align-items-center">
+										<h5 class="m-0">Abraham Bret </h5>
+										<div class="star ms-2">
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+									</div>
+									<p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. </p>
+								</div>
+							</div>
+						</div>
+					   <hr/>
+                    </div>
+					
+				 <div class="coupon-list border-0 p-0">
+						<div class="d-flex align-items-center justify-content-between w-100">
+							<div class="d-flex align-items-center">
+								<figure class="m-0">
+									<img src="./images/rating-profile.jpg" alt="">
+								</figure>
+								<div class="coupon-desc">
+									<div class="d-flex align-items-center">
+										<h5 class="m-0">Abraham Bret </h5>
+										<div class="star ms-2">
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star check"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<span class="review-date flex-grow-100%"> October 10, 2021 </span> 
+									</div>
+									<p class="mb-0"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam eu nulla. Donec lobortis purus vel urna. </p>
+								</div>
+							</div>
+						</div>
+					   <hr/>
+                    </div>					 
+			 	  </div>
+				</div>			
+			 </div>
+			</div>			
+      </div>
+   </div>
+  </div>
+</div>
+
+      <div class="customer-also-view">
+        <div class="title-head">
+          <h2>Customers also viewed</h2>
+        </div>
+        <div class="owl-carousel owl-theme shop_cat " id="related-product">
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product1.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product2.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product3.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product4.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product3.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product5.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="product-item">
+              <div class="card">
+                <div class="discount">25% Off</div>
+                <a href="#" class="item-pic">
+                  <img src="images/product6.jpg">
+                  <div class="wishlist"><i class="far fa-heart"></i></div>
+                </a>
+                <div class="card-body">
+                  <div class="card-title">
+                    <a href="#">Samsung Galaxy Mobile</a>
+                  </div>
+                  <span class="ctg-name text-orange">Clothing</span>
+                  <div class="price">$20,000</div>
+                  <span>10.0 Pieces (Min. Order)</span>
+                  <div class="item-footer">
+
+                    <div class="quantity-number">
+                      <span class="minus">-</span>
+                      <input type="text" value="1">
+                      <span class="plus">+</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary btn-orange">Add to Cart</button>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <!--=====footer======-->
+    <footer>
+      <div class="container">
+        <div class="newsletter">
+          <h2>WE ARE AWESOME & COOL PLUS OUR SERVICES ROCK</h2>
+          <p>
+            Subscribe to our newsletter & stay tune for more updates and our
+            offers
+          </p>
+
+          <Form>
+            <div class="d-flex align-items-center" controlId="formBasicEmail">
+              <input type="email" class="form-control" placeholder="Enter email">
+              <button class="btn theme-btn ms-2 text-white" type="submit"> Subscribe </button>
+            </div>
+          </Form>
+        </div>
+
+        <div class="footer_menu">
+          <div>
+            <h5>Customer Services</h5>
+            <ul>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Report Abuse</a>
+              </li>
+              <li>
+                <a href="#">Submit a Dispute</a>
+              </li>
+              <li>
+                <a href="#">Policies & Rules</a>
+              </li>
+              <li>
+                <a href="#">Get Paid for Your Feedback</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>About Us</h5>
+            <ul>
+              <li>
+                <a href="#">About Company.com</a>
+              </li>
+              <li>
+                <a href="#">About Company Group</a>
+              </li>
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Trade Services</h5>
+            <ul>
+              <li>
+                <a href="#">Trade Assurance</a>
+              </li>
+              <li>
+                <a href="#">Business Identity</a>
+              </li>
+              <li>
+                <a href="#">Logistics Service</a>
+              </li>
+              <li>
+                <a href="#">Production Monitoring</a>
+              </li>
+              <li>
+                <a href="#">Letter of Credit</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Source on </h5>
+            <ul>
+              <li>
+                <a href="#">Resources</a>
+              </li>
+              <li>
+                <a href="#">All Categories</a>
+              </li>
+              <li>
+                <a href="#">Request for Quotation</a>
+              </li>
+              <li>
+                <a href="#">Ready to Ship</a>
+              </li>
+              <li>
+                <a href="#">Buyer Partners</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Sell on Alibaba.com</h5>
+            <ul>
+              <li>
+                <a href="#">Supplier Memberships</a>
+              </li>
+              <li>
+                <a href="#">Learning Center</a>
+              </li>
+              <li>
+                <a href="#">Partner Program</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_social position-relative d-flex align-items-center justify-content-center">
+          <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p class="m-0">
+        Copyright © 1999-2021 Company.com. All rights reserved.
+      </p>
+    </div>
+
+
+    <!--filter-->
+
+    <!--=========below-script-link=========-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://gijsroge.github.io/owl-carousel2-thumbs/assets/OwlCarousel2Thumbs.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

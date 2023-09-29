@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="user_chat" transform="translate(-20 -119)">
+    <g id="Ellipse_82" data-name="Ellipse 82" transform="translate(20 119)" fill="#fff" stroke="#dedede" stroke-width="1">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="19.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M7.935,8.927A4.463,4.463,0,1,0,3.472,4.463,4.465,4.465,0,0,0,7.935,8.927Zm3.968.992H10.195a5.4,5.4,0,0,1-4.519,0H3.968A3.967,3.967,0,0,0,0,13.886v.5A1.488,1.488,0,0,0,1.488,15.87H14.382a1.488,1.488,0,0,0,1.488-1.488v-.5A3.967,3.967,0,0,0,11.9,9.919Z" transform="translate(31.987 130.987)" fill="#dedede"/>
+  </g>
+</svg>

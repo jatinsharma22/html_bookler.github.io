@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SmartCompare</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--======header====-->
+    <header>
+        <div class="container">
+            <div class="header_wrap">
+
+                <div class="logo">
+
+                    <span class="d-sm-inline-block d-lg-none"><i class="fas fa-bars"></i></span>
+
+                    <a href="index.html"><img src="images/logo.svg" alt="" /></a>
+                </div>
+                <div class="header_search">
+                    <div class="input-group position-relative">
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Location
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" placeholder="What are you looking for...">
+
+                        <Button class="btn border-0 theme-bg" id="button-addon2">
+                            <img src="images/search-w.svg" alt="" />
+                        </Button>
+
+
+                    </div>
+                </div>
+
+                <div class="header_icon d-flex align-items-center">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-heart"></i>
+                        <span>Favorite</span>
+                    </a>
+                    <a href="#">
+                        <sup>1</sup>
+                        <i class="fas fa-bell"></i>
+                        <span>Notification</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-comments"></i>
+                        <span>Chat</span>
+                    </a>
+                    <a class="d-sm-none" onClick={handleShow}>
+                        <i class="fas fa-list-ul"></i>
+                        <span>All Categories</span>
+                    </a>
+                </div>
+
+                <div class="header_user">
+                    <div class="header_profile">
+                        <div class="before_login">
+                            <img src="images/account.jpg" class="me-2" alt="" />
+                            <span class="">
+                                <a href="#">Login</a>
+                                <a href="#">/Signup</a>
+                            </span>
+                        </div>
+                        <div class="after_login d-none">
+                            <img src="images/account.jpg" class="me-2" alt="" />
+                            <span class="">Hello, John</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=======end-header======-->
+
+
+    <div class="homer_banner">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3 home_cat_left">
+                    <button type="button" class="btn d-xl-none d-xs-inline-block" data-bs-toggle="offcanvas" href="#mobilecategoery">
+                        <img src="images/cat_icon.svg" alt="" />
+                        All Categories
+                    </button>
+                    <div class="all_category d-xl-block d-none">
+                        <h5>
+                            <img src="images/cat_icon.svg" alt="" />
+                            All Categories
+                        </h5>
+                        <ul>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat1.svg" alt="" />
+                                    </span>
+                                    Women's Fashion
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat2.svg" alt="" />
+                                    </span>
+                                    Men's Fashion
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat3.svg" alt="" />
+                                    </span>
+                                    Phones & Telecommunications
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat4.svg" alt="" />
+                                    </span>
+                                    Computer, Office & Security
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat5.svg" alt="" />
+                                    </span>
+                                    Consumer Electronics
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat6.svg" alt="" />
+                                    </span>
+                                    Jewellery & Watches
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat7.svg" alt="" />
+                                    </span>
+                                    Home, Pet & Appliances
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat8.svg" alt="" />
+                                    </span>
+                                    Bags & Shoes
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat9.svg" alt="" />
+                                    </span>
+                                    Toys , Kids & Babies
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat10.svg" alt="" />
+                                    </span>
+                                    Outdoor Fun & Sports
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat11.svg" alt="" />
+                                    </span>
+                                    Beauty, Health & Hair
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat12.svg" alt="" />
+                                    </span>
+                                    Automobiles & Motorcycles
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span>
+                                        <img src="images/cat13.svg" alt="" />
+                                    </span>
+                                    Home Improvement & Tools
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 home_slider_outer">
+                    <div class="row g-0">
+                        <div class="col-lg-6 home_slider_center">
+                            <div class="owl-carousel owl-theme" id="homeslider">
+                                <div class="item">
+                                    <img src="images/home_slider.jpg" alt="" />
+                                </div>
+                                <div class="item">
+                                    <img src="images/home_slider.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 home_deal_right">
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row g-1 g-sm-2">
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab1.jpg" alt="" />
+                                                <a href="#">
+                                                    Samsung mobile <span>$100</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab2.jpg" alt="" />
+                                                <a href="#">
+                                                    Rolex Watch <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab3.jpg" alt="" />
+                                                <a href="#">
+                                                    Adidas Man Shoes <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab4.jpg" alt="" />
+                                                <a href="#">
+                                                    Micromax Watch <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab3.jpg" alt="" />
+                                                <a href="#">
+                                                    Adidas Man Shoes <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab4.jpg" alt="" />
+                                                <a href="#">
+                                                    Micromax Watch <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab1.jpg" alt="" />
+                                                <a href="#">
+                                                    Samsung mobile <span>$100</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 col-lg-6 mt-0 col">
+                                            <figure class="position-relative">
+                                                <img src="images/home_tab2.jpg" alt="" />
+                                                <a href="#">
+                                                    Rolex Watch <span>$270</span>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop_cat mb-3">
+        <div class="container">
+            <div class="border bg-white px-sm-3 py-3 px-2">
+                <div class="heading">
+                    <h2>Shop By Category</h2>
+                </div>
+
+                <div class="owl-carousel owl-theme" id="category_slider">
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product5.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product6.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop_cat mb-3">
+        <div class="container">
+            <div class="border bg-white px-sm-3 py-3 px-2">
+                <div class="heading">
+                    <h2>Featured Products</h2>
+                </div>
+
+                <div class="owl-carousel owl-theme" id="category_slider-product">
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product5.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product6.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ad text-center mb-3">
+        <div class="container">
+            <img src="images/ad1.jpg" class="w-100" alt="" />
+        </div>
+    </div>
+    <div class="shop_cat mb-3">
+        <div class="container">
+            <div class="border bg-white px-sm-3 py-3 px-2">
+                <div class="heading">
+                    <h2>New Arrivals</h2>
+                </div>
+
+                <div class="owl-carousel owl-theme" id="category_slider-two">
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product5.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product6.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop_cat mb-3">
+        <div class="container">
+            <div class="border bg-white px-sm-3 py-3 px-2">
+                <div class="heading">
+                    <h2>Best Deals</h2>
+                </div>
+                <div class="owl-carousel owl-theme" id="category_slider-three">
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product5.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product6.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ad text-center mb-3">
+        <div class="container">
+            <img src="images/ad2.jpg" class="w-100" alt="" />
+        </div>
+    </div>
+    <div class="shop_cat mb-3">
+        <div class="container">
+            <div class="border bg-white px-sm-3 py-3 px-2">
+                <div class="heading">
+                    <h2>Best seller</h2>
+                </div>
+
+                <div class="owl-carousel owl-theme" id="category_slider-four">
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product5.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card">
+                            <div class="discount">25% Off</div>
+                            <a href="#">
+                                <img src="images/product6.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <a href="#">Samsung Galaxy Mobile</a>
+                                </div>
+                                <div class="price">$20,000</div>
+                                <span>10.0 Pieces (Min. Order)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=====footer======-->
+    <footer>
+        <div class="container">
+            <div class="newsletter">
+                <h2>WE ARE AWESOME & COOL PLUS OUR SERVICES ROCK</h2>
+                <p>
+                    Subscribe to our newsletter & stay tune for more updates and our
+                    offers
+                </p>
+
+                <Form>
+                    <div class="d-flex align-items-center" controlId="formBasicEmail">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                        <button class="btn theme-btn ms-2 text-white" type="submit"> Subscribe </button>
+                    </div>
+                </Form>
+            </div>
+
+            <div class="footer_menu">
+                <div>
+                    <h5>Customer Services</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Report Abuse</a>
+                        </li>
+                        <li>
+                            <a href="#">Submit a Dispute</a>
+                        </li>
+                        <li>
+                            <a href="#">Policies & Rules</a>
+                        </li>
+                        <li>
+                            <a href="#">Get Paid for Your Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>About Us</h5>
+                    <ul>
+                        <li>
+                            <a href="#">About Company.com</a>
+                        </li>
+                        <li>
+                            <a href="#">About Company Group</a>
+                        </li>
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Trade Services</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Trade Assurance</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Identity</a>
+                        </li>
+                        <li>
+                            <a href="#">Logistics Service</a>
+                        </li>
+                        <li>
+                            <a href="#">Production Monitoring</a>
+                        </li>
+                        <li>
+                            <a href="#">Letter of Credit</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Source on </h5>
+                    <ul>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#">All Categories</a>
+                        </li>
+                        <li>
+                            <a href="#">Request for Quotation</a>
+                        </li>
+                        <li>
+                            <a href="#">Ready to Ship</a>
+                        </li>
+                        <li>
+                            <a href="#">Buyer Partners</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Sell on Alibaba.com</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Supplier Memberships</a>
+                        </li>
+                        <li>
+                            <a href="#">Learning Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Partner Program</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_social position-relative d-flex align-items-center justify-content-center">
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="m-0">
+            Copyright © 1999-2021 Company.com. All rights reserved.
+        </p>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end all_category" tabindex="-1" id="mobilecategoery" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">All Categories</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat1.svg" alt="" />
+                        </span>
+                        Women's Fashion
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat2.svg" alt="" />
+                        </span>
+                        Men's Fashion
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat3.svg" alt="" />
+                        </span>
+                        Phones & Telecommunications
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat4.svg" alt="" />
+                        </span>
+                        Computer, Office & Security
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat5.svg" alt="" />
+                        </span>
+                        Consumer Electronics
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat6.svg" alt="" />
+                        </span>
+                        Jewellery & Watches
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat7.svg" alt="" />
+                        </span>
+                        Home, Pet & Appliances
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat8.svg" alt="" />
+                        </span>
+                        Bags & Shoes
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat9.svg" alt="" />
+                        </span>
+                        Toys , Kids & Babies
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat10.svg" alt="" />
+                        </span>
+                        Outdoor Fun & Sports
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat11.svg" alt="" />
+                        </span>
+                        Beauty, Health & Hair
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat12.svg" alt="" />
+                        </span>
+                        Automobiles & Motorcycles
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span>
+                            <img src="images/cat13.svg" alt="" />
+                        </span>
+                        Home Improvement & Tools
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!--=========below-script-link=========-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
